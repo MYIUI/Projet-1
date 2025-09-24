@@ -1,15 +1,60 @@
-.body {
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700;800&display=swap'); 
+ 
+ body {
     background-color: #282d48;
     color: white;
+    font-family: 'Fredoka', sans-serif;
   
 }
 
 .header {
-
+        display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #35394c;
+            border: 1px solid #464c63;
+            padding: clamp(8px, 0.5vw, 15px);
+            border-radius: 10px;
 }
 
 .logo {
+    height: 2.65vw;
+            min-height: 50px;
+            width: auto;
+            min-width: 50px;
+            margin-left: 0.35vw;
+            margin-right: 0.55vw;
+            border-radius: 10px;
+            padding: 0.3vw;
     
 }
 
 
+
+.header button {
+            outline: 2px solid #44d37d;
+            background-color: #1f2937;
+            padding: clamp(9px, 0.53vw, 13.5px) clamp(14px, 0.755vw, 18px);
+            color: white;
+            font-weight: bold;
+            font-family: "Fredoka";
+            font-size: clamp( 12px, 0.85vw, 17px);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .header button:hover {
+            box-shadow: 0 0 15px rgba(48, 217, 158, 0.945);
+            transition: all 0.3s ease;
+        }
+
+
+        .button-container {
+            display: flex;
+            justify-content: center; /* Centers content */
+            align-items: center; /* Aligns items on the same Y level */
+             gap: 4vw; /* Adjusts spacing between elements */
+             margin-right: 30vw;
+                            }
