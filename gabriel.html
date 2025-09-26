@@ -2,9 +2,23 @@
 <html lang="fr">
 <head>
 <title>Portfolio Gabriel Reyes</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+
+    <header class="header">
+        <a href="index.html"><img src="/devmtllogo.png" class="logo"  class="page-transition"></a>
+        <div style="text-align: left; font-weight: bold; margin-left: -19vw;">Devs <br> MTL</div>
+        <div class="button-container">
+                <a href="realisations.html" class="page-transition"><button >Realisations</button></a>
+                <a href="equipe.html"  class="page-transition"><button>Equipe</button></a>
+                <a href="armand.html" class="page-transition"><button>Armand</button></a>
+                <a href="gabriel.html"  class="page-transition"><button>Gabriel</button></a>
+                <a href="michel.html"  class="page-transition"><button>Michel</button></a>
+            </div>
+
+    </header>
     
     <h1 style= "text-align: center; font-size: 60px;">Gabriel Reyes</h1>  
     <p style= "font-size: 20px;">Étant passioné de la programmation, Gabriel a décidé de s'inscrire au collège de Maisonneuve immèdiatement 
@@ -14,7 +28,46 @@
     <p style= "font-size: 20px">Des soucis s'installent déjà dans le chemin du jeune débutant, que ce soit en terme avec les cours ou
         sinon en terme de la socialisation. Heueresement pour lui, il contournera ces obstacles avec le temps. Possible</p>
 
+<div id="transitionOverlay">
+  <img src="/devmtllogo.png" class="transition-logo" />
+</div>
+         
+
 </body>
+
+<script>
+  const overlay = document.getElementById('transitionOverlay');
+  const logo = overlay.querySelector('.transition-logo');
+
+  // For all elements with the class
+  document.querySelectorAll('.page-transition').forEach(el => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      // Get target URL from <a href> or <button data-target>
+      const target = el.getAttribute('href') || el.dataset.target;
+
+      if (!target) return;
+
+      overlay.style.display = 'flex';
+      logo.style.animation = 'none';
+      void logo.offsetWidth; // Force reflow to restart animation
+      logo.style.animation = 'logoTransition 1.5s ease-in-out forwards';
+
+      setTimeout(() => {
+        window.location.href = target;
+      }, 1500);
+    });
+  });
+</script>
+
+
+<script>
+    window.addEventListener('pageshow' , function() {
+        const overlay = documents.getElementById('transitionOverlay');
+        if (overlay) overlay.style.display = 'none';
+    });
+</script>
 
 
 
