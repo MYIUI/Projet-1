@@ -8,22 +8,24 @@
 }
 
 .header {
-        display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #35394c;
-            border: 1px solid #464c63;
-            padding: clamp(8px, 0.5vw, 15px);
-            border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(145deg, #3c4056, #2e3244);
+    box-shadow:
+        0 0.35vw 0.8vw rgba(0, 0, 0, 0.45),
+        inset 0 0.1vw 0.15vw rgba(255, 255, 255, 0.08); 
+    padding: clamp(8px, 0.5vw, 15px);
+    border-radius: 10px;
 }
 
 .logo {
     height: 2.65vw;
-            min-height: 50px;
+            min-height: 20px;
             width: auto;
-            min-width: 50px;
+            min-width: 20px;
             margin-left: 0.35vw;
-            margin-right: 0.55vw;
+            margin-right: 10vw;
             border-radius: 10px;
             padding: 0.3vw;
     
@@ -32,8 +34,11 @@
 
 
 .header button {
-            outline: 2px solid #44d37d;
-            background-color: #1f2937;
+            outline: 1px solid #44d37d;
+            background: linear-gradient(145deg, #212231, #1b1d2e); 
+            box-shadow:
+                0 0.35vw 0.8vw rgba(0, 0, 0, 0.45), 
+                inset 0 0.1vw 0.15vw rgba(255, 255, 255, 0.08);
             padding: clamp(9px, 0.53vw, 13.5px) clamp(14px, 0.755vw, 18px);
             color: white;
             font-weight: bold;
@@ -53,14 +58,14 @@
 
         .button-container {
             display: flex;
-            justify-content: center; /* Centers content */
-            align-items: center; /* Aligns items on the same Y level */
-             gap: 4vw; /* Adjusts spacing between elements */
+            justify-content: center;
+            align-items: center; 
+             gap: 4vw; 
              margin-right: 30vw;
                             }
 
 
-                            #transitionOverlay {
+#transitionOverlay {
   display: none;
   position: fixed;
   inset: 0;
@@ -93,4 +98,12 @@
     opacity: 0;
     transform: scale(0.7);
   }
+}
+
+footer {
+  text-align: center;
+  color: #ddd;
+  font-family: Arial, sans-serif;
+  margin-top: 2vw;
+  font-size: 0.9vw;
 }

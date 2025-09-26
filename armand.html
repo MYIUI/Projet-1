@@ -4,13 +4,33 @@
 <title>Armand Carstea Radu</title>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="styles.css">
+<style>
+  .box {
+    padding: clamp(6px, 1.2vw, 15px) clamp(8px,2vw, 42px);
+    background: linear-gradient(145deg, #3c4056, #2e3244); /* subtle gradient */
+    box-shadow:
+    0 0.35vw 0.8vw rgba(0, 0, 0, 0.45),    /* outer shadow */
+    inset 0 0.1vw 0.15vw rgba(255, 255, 255, 0.08); /* inner shine */
+    border-radius: 10px;
+    border:1px solid rgb(11, 7, 41);
+    width: 30vw;
+    min-width: 100px;
+    color: white;
+    font-size: clamp(14px, 1.1vw, 23px);
+    margin: 8px;
+  }
+
+</style>
+
 </head>
 
 <body>
 
     <header class="header">
+        <div style="display: flex;">
         <a href="index.html"><img src="/devmtllogo.png" class="logo"  class="page-transition"></a>
-        <div style="text-align: left; font-weight: bold; margin-left: -19vw;">Devs <br> MTL</div>
+        <div style="text-align: left; font-weight: bold; font-size: 0.85vw; margin-left: -9.5vw; margin-top: clamp(5px, 0.75vw, 12px);">Devs <br> MTL</div>
+    </div>
         <div class="button-container">
                 <a href="realisations.html" class="page-transition"><button >Realisations</button></a>
                 <a href="equipe.html"  class="page-transition"><button>Equipe</button></a>
@@ -23,14 +43,25 @@
 
     <div style="text-align: center;">
     
-    <h1>Profile de Armand</h1>  
-    <p>Nee a Montreal, il a maintenant 17 ans et poursuit ses etudes au Cegep de maisonnneuve dans le programme de Developpment d,application</p>
+    <h1 style="font-size: 3vw; margin-bottom: clamp(20px, 4vw, 81px);">Profile de Armand</h1>  
+
+    <div syle="items-align: left;">
+    <div class="box">
+    <p>Nee a Montreal, il a maintenant 17 ans et poursuit <br> ses etudes au Cegep de maisonnneuve dans <br> le programme de Developpment d'application</p>
+    </div>
+    </div>
+
+    <div syle="items-align: right;">
+    <div class="box">
+    <p>Il a eu des cours de python en secondaire 5,<br> a appris du html et css tout seul depuis fin 2024.<br> Il commence a apprendre du react.</p>
+    </div>
+    </div>
+
     
-
-    <p>Il a eu des cours de python en secondaire 5, et a appris du html et css tout seul depuis fin 2024. Il commence a apprendre du react.</p>
-
-    <p>Depuis debut 2025, il code une project (avec un dev en Espagne), creant un frontend profesionnel en react. Il a commencve
-         a coder en html basique, il a travaille et retravailler son code au point ou les pages allairent d'un project creer par un gars de 3ans dexperience</p>
+    <div class="box">
+    <p>Depuis debut 2025, il code une project (avec un dev en Espagne),<br> creant un frontend profesionnel en react. Il a commence
+         a coder le project en html basique,<br> il a retravaille et raffine son code<br> au point ou les pages allairent profesionnalement constrites</p>
+         </div>
 
          <img src="" class="image-after">
          <div>*Fleche*</div>
@@ -38,7 +69,10 @@
 
     </div>
 
-         <footer></footer>
+         <footer>
+  <p>© 2025 Devs MTL. All rights reserved.</p>
+</footer>
+
 
 
          <div id="transitionOverlay">
