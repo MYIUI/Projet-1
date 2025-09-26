@@ -4,7 +4,60 @@
 <title>Equipe</title>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="styles.css">
+<style>
+.box {
+    padding: clamp(6px, 1.2vw, 15px) clamp(8px,2vw, 42px);
+    background: linear-gradient(145deg, #3c4056, #2e3244); 
+    box-shadow:
+    0 0.35vw 0.8vw rgba(0, 0, 0, 0.45), 
+    inset 0 0.1vw 0.15vw rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    border:1px solid rgb(11, 7, 41);
+    width: 30vw;
+    min-width: 100px;
+    color: white;
+    font-size: clamp(14px, 1.1vw, 23px);
+    margin: 8px;
+    transition: scale 0.3s ease;
+  }
 
+  .box:hover {
+    scale: 1.03;
+    transition: scale 0.3s ease;
+  }
+
+  .plus-info-btn {
+    padding: clamp(6px, 0.75vw, 21px) clamp(10px, 1vw, 21px);
+    background: linear-gradient(145deg, #3c4056, #2e3244);
+    box-shadow:
+    0 0.35vw 0.8vw rgba(0, 0, 0, 0.45), 
+    inset 0 0.1vw 0.15vw rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    width: 7vw;
+    min-width: 75px;
+    border: 1px solid transparent;
+  }
+
+  .chevron{
+    margin-left: 8px !important;
+  }
+
+  .plus-info-btn:hover {
+        border: 1px solid rgb(45, 162, 110);
+        transition: all 0.3s;
+  }
+
+  .plus-info-btn .chevron {
+    display: inline-block;
+    transition: all 0.3s;
+  }
+
+  .plus-info-btn:hover .chevron {
+    transform: translatex(7px);
+    transition: all 0.3s;
+  }
+
+</style>
 </head>
 
 <body>
@@ -23,12 +76,33 @@
             </div>
 
     </header>
+
+    <div style="align-items: center;">
     
-    <h1>Titre</h1>  
-    <p>Paragraphe</p>
+    <h1 style="text-align: center; font-size: 3vw;">L'equipe</h1>  
+    <p style="text-align: center; margin-bottom: 4vw">Ceci est l'equipe de DevsMTL, construit a partir de diffrentes qualités , valeurs et experiences !</p>
     
-    <h2>Titre 2</h2>
-    <p>Paragraphe</p>
+    <div class="box-container">
+    <div class="box">
+        <img src="" class="">
+        <div style="font-weight: bold;">Armand Carstea Radu</div>
+        <p>Sait coder en html, css, apprens du react</p>
+        <div href="armand.html" class="plus-info-btn">Plus d'info<span class="chevron">››</span></div>
+    </div>
+    <div class="box">
+        <img src="" class="">
+        <div style="font-weight: bold;">Michel</div>
+        <p></p>
+        <div href="michel.html" class="plus-info-btn">Plus d'info<span class="chevron">››</span></div>
+    </div>
+    <div class="box">
+        <img src="" class="">
+        <div style="font-weight: bold;">Gabriel</div>
+        <p></p>
+        <div href="gabriel.html" class="plus-info-btn">Plus d'info<span class="chevron">››</span></div>
+    </div>
+    </div>
+    </div>
 
 <div id="transitionOverlay">
   <img src="/devmtllogo.png" class="transition-logo" />

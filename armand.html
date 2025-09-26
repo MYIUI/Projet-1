@@ -5,6 +5,10 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="styles.css">
 <style>
+.body {
+    overflow-x: none !important;
+}
+
   .box {
     padding: clamp(6px, 1.2vw, 15px) clamp(8px,2vw, 42px);
     background: linear-gradient(145deg, #3c4056, #2e3244); /* subtle gradient */
@@ -18,6 +22,41 @@
     color: white;
     font-size: clamp(14px, 1.1vw, 23px);
     margin: 8px;
+    transition: scale 0.3s ease;
+  }
+
+  .box:hover {
+    scale: 1.03;
+    transition: scale 0.3s ease;
+  }
+
+  .image-before {
+   width: 55vw;
+   height: auto;
+   border-radius: 10px;
+  }
+
+  .image-after {
+    width: 55vw;
+   height: auto;
+   border-radius: 10px;
+   margin-top: 1vw;
+  }
+
+  .image-container {
+margin-left: 35vw;
+margin-top: -40vw;
+margin-bottom: 3vw;
+  }
+
+  .image-single-wrapper {
+    scale: 1;
+    transition: scale 0.3s ease;
+  }
+
+  .image-single-wrapper:hover {
+    scale: 1.03;
+    transition: scale 0.3s ease;
   }
 
 </style>
@@ -47,26 +86,37 @@
 
     <div syle="items-align: left;">
     <div class="box">
-    <p>Nee a Montreal, il a maintenant 17 ans et poursuit <br> ses etudes au Cegep de maisonnneuve dans <br> le programme de Developpment d'application</p>
+    <p>Né à Montreal, il a maintenant 17 ans et poursuit <br> ses études au Cegep de Maisonnneuve dans <br> le programme de Développment d'applications</p>
     </div>
     </div>
 
     <div syle="items-align: right;">
     <div class="box">
-    <p>Il a eu des cours de python en secondaire 5,<br> a appris du html et css tout seul depuis fin 2024.<br> Il commence a apprendre du react.</p>
+    <p>Il a eu des cours de python en secondaire 5,<br> et a apprit du html et du css tout seul depuis fin 2024.<br> Il commence a apprendre du React.</p>
     </div>
     </div>
 
     
     <div class="box">
-    <p>Depuis debut 2025, il code une project (avec un dev en Espagne),<br> creant un frontend profesionnel en react. Il a commence
-         a coder le project en html basique,<br> il a retravaille et raffine son code<br> au point ou les pages allairent profesionnalement constrites</p>
+    <p>Depuis début 2025, il code un projet (avec un dev en Espagne),<br> développant un frontend profesionnel en react. Il a commencé
+         à coder le projet en html basique,<br> ensuite il a retravaillé et raffiné son code<br>(surtout CSS) pour que le frontend ait un look profesionnel</p>
          </div>
 
-         <img src="" class="image-after">
-         <div>*Fleche*</div>
-         <img src=" " class="image-after">
+         <div class="box">
+    <p>Il est bon en travail d'quipe et il a aussi la determination de mener un projet qui dur longtemps.<br>Une de ses plus grandes qualite est la perseverance et la creativite (CSS)</p>
+    </div>
 
+         <div class="image-container">
+         <div class="image-single-wrapper">
+         <img src="/before.png" class="image-before">
+         <div class="desc-1">Première version de base en html</div>
+         </div>
+
+         <div class="image-single-wrapper">
+         <img src="/after.png" class="image-after">
+         <div class="desc-2">La version finale qui sortira comme MVP, codé en react/next.js</div>
+         </div>
+         </div>
     </div>
 
          <footer>

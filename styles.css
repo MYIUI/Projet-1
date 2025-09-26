@@ -7,6 +7,32 @@
   
 }
 
+/* Works on Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 8px;              /* scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1b29;      /* track (background) */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #52566b;      /* thumb (scroll handle) */
+  border-radius: 5px;       /* rounded edges */
+  border: 2px solid #3a3c51; /* adds space between track & thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5a5e72;      /* hover color */
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;                  /* "auto" or "thin" */
+  scrollbar-color: #5e6a88 #1a1b29;       /* thumb color | track color */
+}
+
+
 .header {
     display: flex;
     justify-content: space-between;
