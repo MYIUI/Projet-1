@@ -2,6 +2,49 @@
 <html lang="fr">
 <head>
 <link rel="stylesheet" href="styles.css">
+<style>
+    .container {
+      display: flex;
+      justify-content: center; 
+      padding: 3rem 0; 
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2vw;
+      max-width: 1200px;
+      width: 90%;
+    }
+
+    .service {
+      padding: 2vw;
+      border-radius: 1vw;
+      text-align: center;
+      background: linear-gradient(145deg, #3c4056, #2e3244); 
+    box-shadow:
+    0 0.35vw 0.8vw rgba(0, 0, 0, 0.45), 
+    inset 0 0.1vw 0.15vw rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+      transition: transform 0.3s, background 0.3s;
+      color: #eaeaea;
+    }
+
+    .service:hover {
+      transform: translateY(-8px);
+      background: linear-gradient(145deg, #434866, #383d56); 
+    }
+
+    .service h3 {
+      margin-bottom: 1vw;
+      color: #e8e8e8;
+    }
+
+    .service p {
+      font-size: 1vw;
+      color: #cfcfcf;
+    }
+</style>
 </head>
 
 
@@ -27,6 +70,24 @@
 
     <p style="color:rgb(219, 219, 219); text-align: center; font-size: 1.2vw;">Agence de programmation spécialisée dans le développement web,<br>
      mobile et blockchain. Nous transformons vos idées en produits<br> performants et sur mesure.</p>
+
+
+     <div class="container">
+    <div class="services">
+      <div class="service">
+        <h3>Développement Web</h3>
+        <p>Sites modernes, performants et adaptés à vos besoins professionnels.</p>
+      </div>
+      <div class="service">
+        <h3>Applications Mobiles</h3>
+        <p>Apps iOS & Android optimisées pour l’expérience utilisateur.</p>
+      </div>
+      <div class="service">
+        <h3>UI / UX Design</h3>
+        <p>Interfaces élégantes et ergonomiques pour une meilleure expérience utilisateur.</p>
+      </div>
+    </div>
+  </div>
 
 
 
