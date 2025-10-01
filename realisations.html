@@ -4,6 +4,54 @@
 <title>Realisation</title>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="styles.css">
+<style>
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #f97951;
+    }
+
+    .realisations {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .box {
+      background: linear-gradient(145deg, #3c4056, #2e3244);
+      box-shadow: 0 0.35vw 0.8vw rgba(0, 0, 0, 0.45),
+                  inset 0 0.1vw 0.15vw rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      border: 1px solid rgb(11, 7, 41);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .box:hover {
+      transform: translateY(-8px);
+    }
+
+    .box img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .box-content {
+      padding: 1.5rem;
+    }
+
+    .box h3 {
+      margin: 0 0 1rem;
+      color: #ffffff;
+    }
+
+    .box p {
+      font-size: 0.95rem;
+      color: #d0d0d0;
+    }
+</style>
 </head>
 
 <body>
@@ -25,6 +73,44 @@
     
     <h1 style="font-size: 3vw; font-weight: bold; text-align: center;">Nos Realisations</h1>  
     <p style="color: rgb(223, 225, 226); font-size: 1.25vw; text-align: center;">Realisations de DevsMTL</p>
+
+
+    <div class="realisations">
+      <div class="box">
+        <img src="https://picsum.photos/400/200?random=1" alt="Projet Web">
+        <div class="box-content">
+          <h3>Site e-commerce</h3>
+          <p>Développement d’une boutique en ligne performante et sécurisée avec paiement intégré.</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="https://picsum.photos/400/200?random=2" alt="Projet Mobile">
+        <div class="box-content">
+          <h3>Application Mobile</h3>
+          <p>Conception d’une app iOS/Android pour la gestion de tâches et la productivité.</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="https://picsum.photos/400/200?random=3" alt="Projet UI/UX">
+        <div class="box-content">
+          <h3>UI / UX Design</h3>
+          <p>Création d’interfaces modernes et intuitives pour améliorer l’expérience utilisateur.</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="https://picsum.photos/400/200?random=4" alt="Projet API">
+        <div class="box-content">
+          <h3>Intégration API</h3>
+          <p>Mise en place d’APIs REST & GraphQL pour connecter plusieurs services externes.</p>
+        </div>
+      </div>
+    </div>
+
+
+    
     
 
 <div id="transitionOverlay">
